@@ -1,15 +1,23 @@
 <template>
-  <hello-world />
+  <v-container>
+    <navbar-component></navbar-component>
+
+  </v-container>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import HomeComponent from '../components/HomeComponent'
+import NavbarComponent from '../components/NavbarComponent.vue'
 
-  export default {
-    name: 'Home',
+export default {
+  name: 'Home',
 
-    components: {
-      HelloWorld,
-    },
-  }
+  components: {
+    HomeComponent,
+  },
+  components: {
+    NavbarComponent, // Registrar el componente
+  },
+
+}
 </script>
