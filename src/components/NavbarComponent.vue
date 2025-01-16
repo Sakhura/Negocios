@@ -59,9 +59,7 @@
         </v-navigation-drawer>
 
         <!-- Contenido principal -->
-        <v-main>
-            <router-view />
-        </v-main>
+    
     </v-app>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
-    <v-container class="d-flex flex-column min-vh-100 py-4">
-        <!-- hero -->
 
+    <div> Inicio
+    <v-container class="d-flex flex-column align-start">
         <!-- Proveedores Section -->
-        <section class="my-5">
+        <section class="my-4">
             <h2 class="mb-4">Proveedores</h2>
             <v-simple-table>
                 <thead>
@@ -23,7 +23,6 @@
                     </tr>
                 </tbody>
             </v-simple-table>
-
             <v-btn @click="navigateToRegisterProvider" color="info" large class="mt-4">
                 Registrar Proveedor
             </v-btn>
@@ -61,20 +60,15 @@
                 </v-btn>
             </v-col>
         </v-row>
-
-        <!-- Sociales y Contacto -->
-
-
     </v-container>
+</div>
 </template>
 
 <script>
 import axios from "axios";
 
-
 export default {
     name: "HomeView",
-
 
     data() {
         return {
@@ -84,6 +78,7 @@ export default {
             contactInfo: {},
         };
     },
+
     methods: {
         async fetchHomeData() {
             try {
@@ -99,13 +94,16 @@ export default {
                 console.error("Error fetching home data:", error);
             }
         },
+
         navigateToRegisterProvider() {
             this.$router.push("/register-provider");
         },
+
         navigateToProducts() {
             this.$router.push("/products");
         },
     },
+
     created() {
         this.fetchHomeData();
     },
