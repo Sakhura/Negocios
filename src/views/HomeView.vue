@@ -1,22 +1,20 @@
 <template>
   <v-container>
     <navbar-component></navbar-component>
-
+    <HomeComponent></HomeComponent>
   </v-container>
 </template>
 
 <script>
-import HomeComponent from '../components/HomeComponent'
+import HomeComponent from '../components/HomeComponent.vue'
 import NavbarComponent from '../components/NavbarComponent.vue'
 
 export default {
   name: 'Home',
 
   components: {
-    HomeComponent,
-  },
-  components: {
-    NavbarComponent, // Registrar el componente
+    NavbarComponent,
+    HomeComponent, // Registrar el componente
   },
 
 }
