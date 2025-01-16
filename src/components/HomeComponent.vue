@@ -95,7 +95,7 @@ export default {
         },
 
         navigateToRegisterProvider() {
-            this.$router.push("/register-provider");
+            this.$router.push("/registro");
         },
 
         navigateToProducts() {
