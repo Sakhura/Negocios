@@ -1,7 +1,6 @@
 <template>
-
-    <div> Inicio
-    <v-container class="d-flex flex-column align-start">
+    <div class="min-vh-100 d-flex flex-column">        
+        <v-container class="flex-grow-1 d-flex flex-column align-start">
         <!-- Proveedores Section -->
         <section class="my-4">
             <h2 class="mb-4">Proveedores</h2>
@@ -61,7 +60,7 @@
             </v-col>
         </v-row>
     </v-container>
-</div>
+    </div>
 </template>
 
 <script>

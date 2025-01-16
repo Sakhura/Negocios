@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <div>
         <!-- Navbar con menú hamburguesa -->
         <v-app-bar app color="primary" dark>
             <!-- Icono del menú hamburguesa -->
@@ -60,7 +60,7 @@
 
         <!-- Contenido principal -->
     
-    </v-app>
+    </div>
 </template>
 
 <script>
