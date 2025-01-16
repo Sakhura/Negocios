@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProveedorView from '@/views/ProveedorView.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +16,16 @@ const routes = [
     path: '/proveedores',
     name: 'ProveedorComponent',
     component: ProveedorView
+  },
+  {
+    path: '/registro',
+    name: 'RegisterComponent',
+    component: () => import('@/components/RegisterComponent.vue')
+  },
+  {
+    path: '/login',
+    name: 'LoginComponent',
+    component: () => import('@/components/LoginComponent.vue')
   },
   {
     path: '/about',
