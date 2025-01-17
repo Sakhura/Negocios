@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils';
-import HomeView from '@/components/HomeView.vue';
+import HomeComponent from '@/components/HomeComponent.vue';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import axios from 'axios';
@@ -31,11 +31,11 @@ localVue.use(VueRouter);
 const router = new VueRouter();
 const vuetify = new Vuetify();
 
-describe('HomeView.vue', () => {
+describe('HomeComponent.vue', () => {
     let wrapper;
 
     beforeEach(() => {
-        wrapper = mount(HomeView, {
+        wrapper = mount(HomeComponent, {
             localVue,
             router,
             vuetify,
