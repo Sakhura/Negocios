@@ -51,3 +51,51 @@
       }
     };
     </script>
+
+<style scoped>
+  
+.v-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.v-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.v-card-text h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Espaciado en el botón */
+.v-btn {
+  margin-bottom: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .v-row {
+    gap: 8px;
+  }
+
+  .product-card {
+    margin-bottom: 16px;
+  }
+}
+</style>
